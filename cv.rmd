@@ -57,9 +57,10 @@ Research Interests {#interests}
 --------------------------------------------------------------------------------
 
 - Population Health  
-- Social Network Analysis  
+- Misinformation
+- Social Network Analysis 
+- Survey Methodology
 - Computational Methods 
-- Digital Trace Data
 - Mixed-Methods Design
 
 

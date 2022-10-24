@@ -55,8 +55,16 @@ sup {
 }
 
 
+/* background color of the page */
+@page {
+    background: linear-gradient(
+    to left, 
+    var(--sidebar-background-color) var(--sidebar-background-width), 
+    #fffdef var(--sidebar-background-width));
+}
+
 .details .place {
-  margin-top: 0.25rem;
+  margin-top: 0.1rem;
 }
 
 .main-block:not(.concise) .details div {
@@ -89,8 +97,13 @@ sup {
   content: "• ";
 }
 
-/* link color is solarized violet */
+/* unvisited link */
 a:link {
+  color: #6c71c4; 
+}
+
+/* visited link */
+a:visited {
   color: #6c71c4; 
 }
 
@@ -198,7 +211,7 @@ a:link {
 /* detailed customization thanks to Chrome DevTools */
 [data-id="disclaimer"] {
     position: relative;
-    bottom: calc(var(--pagedjs-margin-bottom)-2.2in);
+    bottom: calc(var(--sidebar-margin-bottom) - 212px); 
     right: var(--sidebar-horizontal-padding);
     font-size: 0.75rem;
     font-style: italic;
