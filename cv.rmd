@@ -1,0 +1,160 @@
+---
+title: "Ihsan Kahveci's CV"
+author: Ihsan Kahveci
+date: "`r Sys.Date()`"
+params:
+  pdf_mode:
+    value: true
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'resume']
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(magrittr) # For the pipe
+source("cv_printing_functions.r")
+
+# Read in all data and initialize a CV printer object
+CV <- create_CV_object(
+  data_location = "https://docs.google.com/spreadsheets/d/1g2dM7OsKADP-RWAR1A7QEi70yPqC9mupyWuhqnNNy2g/edit?usp=sharing",  
+  pdf_mode = params$pdf_mode
+)
+
+```
+
+
+```{r}
+# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+if(params$pdf_mode) {
+    cat("
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>")
+}
+```
+
+
+Aside
+================================================================================
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_contact_info()
+```
+
+
+Research Interests {#interests}
+--------------------------------------------------------------------------------
+
+- Population Health  
+- Social Network Analysis  
+- Computational Methods 
+- Digital Trace Data
+- Mixed-Methods Design
+
+
+Programming {#skills}
+--------------------------------------------------------------------------------
+- R   
+- SQL  
+- Bash  
+- Python  
+- Vega-Lite  
+- Javascript(d3.js)  
+
+Language {#language}
+--------------------------------------------------------------------------------
+- Turkish (native)   
+- English  
+
+
+
+Disclaimer {#disclaimer style="position:relative; bottom=0;"}
+------------------------------------------------------------------------------
+
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+
+Main
+================================================================================
+
+**Ihsan Kahveci** {#title}
+--------------------------------------------------------------------------------
+
+<!-- ### Computational sociologist & PhD student -->
+
+```{r, eval=FALSE}
+# Note the special double pipe so we modify the CV object in place
+CV %<>% print_text_block("intro") 
+```
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('education')
+```
+
+
+
+Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('work_experience')
+```
+
+
+
+Work in Progress {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('working_papers')
+```
+
+
+
+<!-- Invited Talks {data-icon=suitcase} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+```{r, eval=FALSE}
+CV %<>% print_section('invited_talks')
+```
+
+
+
+
+<!-- Fellowship and Awards {data-icon=award} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+```{r, eval=FALSE}
+CV %<>% print_section('fellowship_and_awards')
+```
+
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<!-- 
+<br>
+<br>
+<br>
+-->
+
+```{r}
+CV %<>% print_links()
+```
+
