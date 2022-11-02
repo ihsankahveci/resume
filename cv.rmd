@@ -103,16 +103,7 @@ CV %<>% print_text_block("intro")
 
 
 
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('education')
-```
-
-
-
-Experience {data-icon=suitcase}
+Employment {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -121,11 +112,18 @@ CV %<>% print_section('work_experience')
 
 
 
-Work in Progress {data-icon=book}
+Projects {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('working_papers')
+```
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('education')
 ```
 
 
