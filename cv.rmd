@@ -53,7 +53,7 @@ CV %>% print_contact_info()
 ```
 
 
-Research Interests {#interests}
+Research {#interests}
 --------------------------------------------------------------------------------
 
 - Population Health  
@@ -64,14 +64,24 @@ Research Interests {#interests}
 - Mixed-Methods Design
 
 
-Programming {#skills}
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+- Probability & Statistics
+- Machine Learning 
+- Data Visualization 
+- Cloud Computing
+- Version Control 
+- Database Management 
+
+Programming {#coding}
 --------------------------------------------------------------------------------
 - R   
 - SQL  
 - Bash  
 - Python  
 - Vega-Lite  
-- Javascript(d3.js)  
+- Javascript (d3.js)
 
 Language {#language}
 --------------------------------------------------------------------------------
@@ -107,7 +117,7 @@ Employment {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('work_experience')
+CV %<>% print_section('work_experience') 
 ```
 
 
@@ -116,7 +126,9 @@ Projects {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('working_papers')
+# CV %<>% print_section('working_papers')
+CV %>% print_section('working_papers')
+
 ```
 
 Education {data-icon=graduation-cap data-concise=true}

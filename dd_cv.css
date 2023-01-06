@@ -211,7 +211,7 @@ a:visited {
 /* detailed customization thanks to Chrome DevTools */
 [data-id="disclaimer"] {
     position: relative;
-    bottom: calc(var(--sidebar-margin-bottom) - 212px); 
+    bottom: calc(var(--sidebar-margin-bottom) - 35px); 
     right: var(--sidebar-horizontal-padding);
     font-size: 0.75rem;
     font-style: italic;
