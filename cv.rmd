@@ -55,7 +55,6 @@ CV %>% print_contact_info()
 
 Research {#interests}
 --------------------------------------------------------------------------------
-
 - Population Health  
 - Misinformation
 - Social Network Analysis 
@@ -126,8 +125,7 @@ Projects {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
-# CV %<>% print_section('working_papers')
-CV %>% print_section('working_papers')
+CV %<>% print_section('working_papers')
 
 ```
 

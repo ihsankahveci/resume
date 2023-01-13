@@ -139,9 +139,9 @@ print_section <- function(cv, section_id, glue_template = "default"){
     glue_template <- "
 ### {title}
 
-{loc}
-
 {institution}
+
+{loc}
 
 {timeline}
 
