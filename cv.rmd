@@ -53,14 +53,14 @@ CV %>% print_contact_info()
 ```
 
 
-Research {#interests}
+Research {#research}
 --------------------------------------------------------------------------------
-- Population Health  
 - Misinformation
-- Social Network Analysis 
+- Public Health
+- Network Analysis 
 - Survey Methodology
-- Computational Methods 
-- Mixed-Methods Design
+- Geospatial Analysis
+- Mixed-Methods Research
 
 
 

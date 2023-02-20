@@ -211,7 +211,7 @@ a:visited {
 /* detailed customization thanks to Chrome DevTools */
 [data-id="disclaimer"] {
     position: relative;
-    bottom: calc(var(--sidebar-margin-bottom) - 85px); 
+    bottom: calc(var(--sidebar-margin-bottom) - 50px); 
     right: var(--sidebar-horizontal-padding);
     font-size: 0.75rem;
     font-style: italic;
@@ -236,6 +236,23 @@ a:visited {
     text-align: right;
     line-height: 1;
     max-width: var(--date-block-width);
+}
+
+
+[data-id="research"] {
+    line-height: 1.4;
+}
+
+[data-id="skills"] {
+    line-height: 1.4;
+}
+
+[data-id="coding"] {
+    line-height: 1.4;
+}
+
+[data-id="language"] {
+    line-height: 1.4;
 }
 
 
