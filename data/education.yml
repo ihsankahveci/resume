@@ -1,0 +1,20 @@
+phd:
+  title: PhD, Sociology
+  institution: University of Washington
+  location: Seattle, WA
+  date: "2019 – 2026"
+  description: "Committee: Zack Almquist (chair), Emma Spiro, Tyler McCormick"
+
+ma:
+  title: MA, Sociology
+  institution: University of Washington
+  location: Seattle, WA
+  date: "2019 – 2021"
+  description: "Committee: Zack Almquist (chair), Steve Pfaff, Resat Kasaba"
+
+ba:
+  title: BA, Management
+  institution: Bogazici University
+  location: Istanbul, Turkey
+  date: "2014 – 2019"
+  description: "High Honors"

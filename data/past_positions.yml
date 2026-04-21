@@ -1,0 +1,27 @@
+ssda:
+  title: Predoctoral Research Associate
+  institution: University of Washington
+  location: Seattle, WA
+  date: "2021 – 2026"
+  description: "The Social, Spatial, and Dynamic Analysis Lab - PI: Dr. Zack W. Almquist"
+
+google:
+  title: User Experience PhD Research Intern
+  institution: Google
+  location: Kirkland, WA
+  date: "Summer 2025"
+  description: ""
+
+# csde:
+#   title: Predoctoral Research Associate
+#   institution: University of Washington
+#   location: Seattle, WA
+#   date: "Summer 2023"
+#   description: "Center for Studies in Demography and Ecology · PI: Dr. Jessica Godwin"
+
+dssg:
+  title: Data Science for Social Good Fellow
+  institution: eScience Institute, UW
+  location: Seattle, WA
+  date: "Summer 2022"
+  description: 'Project: #link("https://uwescience.github.io/DSSG2022-Tracking-Poverty")[Tracking Poverty] - PI: Dr. Jennifer Romich'

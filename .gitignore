@@ -1,0 +1,11 @@
+.DS_Store
+_output/
+*.pdf
+.Rhistory
+.RData
+.Rproj.user/
+renv/
+
+/.quarto/
+
+/.luarc.json

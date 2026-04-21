@@ -1,0 +1,41 @@
+ds_stats:
+  title: Instructor of Record — Data Science and Statistics for Social Sciences
+  institution: University of Washington
+  location: Seattle, WA
+  date: "2024"
+  description: ""
+
+soc_theory:
+  title: Teaching Assistant — Sociological Theory
+  institution: University of Washington
+  location: Seattle, WA
+  date: "2021"
+  description: ""
+
+data_society:
+  title: Teaching Assistant — Data and Society
+  institution: University of Washington
+  location: Seattle, WA
+  date: "2020"
+  description: ""
+
+# soc_problems:
+#   title: Teaching Assistant — Social Problems; Crime, Politics, and Justice
+#   institution: University of Washington
+#   location: Seattle, WA
+#   date: "2019"
+#   description: ""
+
+software_carpentry:
+  title: Workshop — Software Carpentry (with R)
+  institution: eScience Institute, UW
+  location: Seattle, WA
+  date: "2023"
+  description: ""
+
+# hpc:
+#   title: Workshop Instructor — Intro to Unix/Linux Shell and HPC (HYAK)
+#   institution: UW CSDE
+#   location: Seattle, WA
+#   date: "2023"
+#   description: ""

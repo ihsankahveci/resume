@@ -1,0 +1,123 @@
+---
+title: "Ihsan Kahveci — CV"
+author:
+  firstname: İhsan
+  lastname: Kahveci
+  address:
+    - "Leverhulme Centre for Demographic Science"
+    - "University of Oxford"
+    - "42-43 Park End Street, Oxford OX1 1JD"
+  contacts:
+    - icon: fa house
+      text: ihsankahveci.com
+      url: "https://ihsankahveci.com"
+    - icon: fa envelope
+      text: ihsan.kahveci@demography.ox.ac.uk
+      url: "mailto:ihsan.kahveci@demography.ox.ac.uk"
+    - icon: fa brands github
+      text: ihsankahveci
+      url: "https://github.com/ihsankahveci"
+format: awesomecv-typst
+style:
+  color-accent: "1B5886"
+  color-link: "1B5886"
+  font-header: "Roboto"
+  font-text: "Source Sans 3"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+source("R/render_bib.R")
+```
+
+# Academic Position
+
+```{r}
+#| output: asis
+print_yaml_section("data/academic_position.yml")
+```
+
+# Education
+
+```{r}
+#| output: asis
+print_yaml_section("data/education.yml")
+```
+
+# Publications
+
+## Peer-Reviewed Articles
+
+```{r}
+#| output: asis
+print_section(bib, type = "Article")
+```
+
+## Book Chapters
+
+```{r}
+#| output: asis
+print_section(bib, type = c("InCollection", "InBook"))
+```
+
+## Reports
+
+```{r}
+#| output: asis
+print_section(bib, type = "TechReport", include_tags = NULL)
+```
+
+## Working Papers
+
+```{r}
+#| output: asis
+print_section(bib, type = c("Unpublished", "Misc"), exclude_tags = c("report", "software"), show_year = FALSE)
+```
+
+## Open Source Software
+
+```{r}
+#| output: asis
+print_section(bib, include_tags = "software", show_year = FALSE)
+```
+
+# Past Positions
+
+```{r}
+#| output: asis
+print_yaml_section("data/past_positions.yml")
+```
+
+# Conference Presentations
+
+```{r}
+#| output: asis
+print_presentations_section("data/presentations.yml")
+```
+
+# Fellowships & Awards
+
+```{r}
+#| output: asis
+print_yaml_section("data/awards.yml")
+```
+
+
+# Teaching Experience
+
+```{r}
+#| output: asis
+print_yaml_section("data/teaching.yml")
+```
+
+<!-- # Professional Affiliations
+
+```{r}
+#| output: asis
+print_yaml_section("data/affiliations.yml")
+``` -->
+
+
