@@ -5,21 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
   render:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -44,11 +32,13 @@ jobs:
       - name: Render CV
         run: quarto render cv.qmd
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "_output"
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Push PDF to website repo
+        run: |
+          git clone https://x-access-token:${{ secrets.WEBSITE_TOKEN }}@github.com/ihsankahveci/ihsankahveci.com.git website
+          cp _output/cv.pdf website/cv/cv.pdf
+          cd website
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add cv/cv.pdf
+          git diff --cached --quiet || git commit -m "chore: update cv.pdf from resume repo"
+          git push
